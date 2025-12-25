@@ -35,7 +35,7 @@ When enabled, each modality is exposed as a dataset handle:
 - `dataset.camera_dataset   = CameraDataset(...)`  — Camera data
 - `dataset.lidar_dataset    = LiDARDataset(...)`   — LiDAR data
 - `dataset.mobility_dataset = MobilityDataset(...)`— Mobility / pose / position data
-- [dataset.comm_dataset = CommunicationDataset(...)](#channel-information) — Wireless communication (OFDM channel) data
+- [dataset.comm_dataset = CommunicationDataset(...)](#dataset-wireless-communication) — Wireless communication (OFDM channel) data
 - `dataset.radar_dataset    = RadarDataset(...)`   — Radar (FMCW) data
 
 ---
