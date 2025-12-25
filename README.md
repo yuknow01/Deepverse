@@ -110,6 +110,13 @@ Example toggles used in this setup:
 ## Dataset wireless communication
 `dataset.comm_dataset = CommunicationDataset(...)` — Wireless communication (OFDM channel) data
 
+## Location / Position (Reference)
+### loc data array
+<img width="648" height="418" alt="loc data array" src="https://github.com/user-attachments/assets/b97e5fb3-5b95-459c-beb6-f62ed6075fd7" />
+
+### scene loc
+<img width="289" height="252" alt="scene loc" src="https://github.com/user-attachments/assets/227fb9cc-7e6c-43e5-aff3-0fddbfe77a0c" />
+
 ## Channel information
 **Tensor shape:** `(Rx, Tx, Subcarrier)`
 - `Rx`: BS antenna index (e.g., 16)
@@ -121,9 +128,4 @@ Example toggles used in this setup:
 
 ---
 
-## Location / Position (Reference)
-### loc data array
-<img width="648" height="418" alt="loc data array" src="https://github.com/user-attachments/assets/b97e5fb3-5b95-459c-beb6-f62ed6075fd7" />
 
-### scene loc
-<img width="289" height="252" alt="scene loc" src="https://github.com/user-attachments/assets/227fb9cc-7e6c-43e5-aff3-0fddbfe77a0c" />
