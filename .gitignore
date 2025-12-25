@@ -1,0 +1,18 @@
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# virtual env
+.venv/
+venv/
+env/
+
+# big data / artifacts
+scenarios/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.npz
+*.zip
