@@ -128,4 +128,6 @@ Example toggles used in this setup:
 
 ---
 
+# 수식 설명
+https://chatgpt.com/s/t_694d3f0b31fc819195d061e9b84e8846
 
