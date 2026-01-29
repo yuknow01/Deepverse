@@ -120,7 +120,7 @@ class lwm(torch.nn.Module):
         print(f"Model loaded successfully from {ckpt_path} to {device}")
 
         return model
-
+  
 
 
     def forward(self, input_ids, masked_pos):
