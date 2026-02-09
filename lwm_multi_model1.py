@@ -182,14 +182,7 @@ class multi_modal_lwm(nn.Module):
 
     def forward(self, channel_ids, images):
         channel_tokens = self.channel_embedding(channel_ids)  # (B, seq_len, D_model)
-        if images.dim() == 5:
-            B, T, C, H, W = images.size()
-            images = images.reshape(B * T, C, H, W)
-            image_tokens = self.image_embedding(images)  # (B*T, n_patches, D_model)
-            image_tokens = image_tokens.view(B, T, -1, D_MODEL)  # (B, T, n_patches, D_model)
-            image_tokens = image_tokens.mean(dim=1)  # (B, n_patches, D_MODEL)
-        else:  
-            image_tokens = self.image_embedding(images)  # (B, n_patches, D_model)
+        image_tokens = self.image_embedding(images)  # (B, n_patches, D_model)
 
         for i in range(N_LAYERS):   
             channel_tokens = self.channel_encoder_layers[i](channel_tokens)
