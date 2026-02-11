@@ -4,20 +4,20 @@ import torch.nn.functional as F
 import numpy as np
 
 
-ELEMENT_LENGTH = 16
-D_MODEL = 64
-MAX_LEN = 129
-N_LAYERS = 12
-N_HEADS = 12
-D_FF = D_MODEL * 4
-D_K = D_MODEL // N_HEADS
-D_V = D_MODEL // N_HEADS
-DROPOUT = 0.1
+# ELEMENT_LENGTH = 16
+# D_MODEL = 64
+# MAX_LEN = 129
+# N_LAYERS = 12
+# N_HEADS = 12
+# D_FF = D_MODEL * 4
+# D_K = D_MODEL // N_HEADS
+# D_V = D_MODEL // N_HEADS
+# DROPOUT = 0.1
 
-# image patch params
-IMG_SIZE = 224
-PATCH_SIZE = 16
-IMG_CHANS = 3
+# # image patch params
+# IMG_SIZE = 224
+# PATCH_SIZE = 16
+# IMG_CHANS = 3
 
 class LayerNormalization(nn.Module):
     def __init__(self, d_model: int, eps: float = 1e-6) -> None:
@@ -160,15 +160,37 @@ class FusionEncoderLayer(nn.Module):
         x = self.norm(x)
         x = self.ffn(x)
         return x
-    
-class multi_modal_lwm(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.channel_embedding = Channel_Embedding(ELEMENT_LENGTH, D_MODEL, MAX_LEN)
-        self.image_embedding = Image_Embedding(IMG_SIZE, PATCH_SIZE, IMG_CHANS, D_MODEL)
 
-        self.channel_encoder_layers = nn.ModuleList([ChannelEncoderLayer() for _ in range(N_LAYERS)])
-        self.fusion_encoder_layers = nn.ModuleList([FusionEncoderLayer() for _ in range(N_LAYERS)])
+
+
+
+class multi_modal_lwm(nn.Module):
+    def __init__(self, element_length=16, d_model=64, max_len=129,
+                 n_layers=12, n_heads=12, dropout=0.1,
+                 img_size=224, patch_size=16, img_chans=3):
+        super().__init__()
+
+        # ✅ 내부에서 전역 상수 대신 인자로 받은 값 사용
+        self.element_length = element_length
+        self.d_model = d_model
+        self.max_len = max_len
+        self.n_layers = n_layers
+
+        # (주의) D_K, D_V는 d_model/n_heads로 결정돼야 함
+        assert d_model % n_heads == 0, "d_model must be divisible by n_heads"
+        global D_MODEL, N_HEADS, D_FF, D_K, D_V, DROPOUT
+        D_MODEL = d_model
+        N_HEADS = n_heads
+        D_FF = d_model * 4
+        D_K = d_model // n_heads
+        D_V = d_model // n_heads
+        DROPOUT = dropout
+
+        self.channel_embedding = Channel_Embedding(element_length, d_model, max_len)
+        self.image_embedding = Image_Embedding(img_size, patch_size, img_chans, d_model)
+
+        self.channel_encoder_layers = nn.ModuleList([ChannelEncoderLayer() for _ in range(n_layers)])
+        self.fusion_encoder_layers  = nn.ModuleList([FusionEncoderLayer() for _ in range(n_layers)])
 
     @classmethod
     def from_pretrained(cls, ckpt_name='model_weights.pth', device='cuda', use_auth_token=None):
@@ -181,13 +203,49 @@ class multi_modal_lwm(nn.Module):
         return model
 
     def forward(self, channel_ids, images):
-        channel_tokens = self.channel_embedding(channel_ids)  # (B, seq_len, D_model)
-        image_tokens = self.image_embedding(images)  # (B, n_patches, D_model)
+        # channel_ids: (B, seq_len, element_length) 이어야 함!
+        channel_tokens = self.channel_embedding(channel_ids)
+        image_tokens   = self.image_embedding(images)
 
-        for i in range(N_LAYERS):   
+        for i in range(self.n_layers):
             channel_tokens = self.channel_encoder_layers[i](channel_tokens)
-        
-        for i in range(N_LAYERS):
+
+        for i in range(self.n_layers):
             channel_tokens = self.fusion_encoder_layers[i](channel_tokens, image_tokens)
-        
+
         return channel_tokens
+
+
+
+
+
+# class multi_modal_lwm(nn.Module):
+#     def __init__(self):
+#         super().__init__()
+#         self.channel_embedding = Channel_Embedding(ELEMENT_LENGTH, D_MODEL, MAX_LEN)
+#         self.image_embedding = Image_Embedding(IMG_SIZE, PATCH_SIZE, IMG_CHANS, D_MODEL)
+
+#         self.channel_encoder_layers = nn.ModuleList([ChannelEncoderLayer() for _ in range(N_LAYERS)])
+#         self.fusion_encoder_layers = nn.ModuleList([FusionEncoderLayer() for _ in range(N_LAYERS)])
+
+    # @classmethod
+    # def from_pretrained(cls, ckpt_name='model_weights.pth', device='cuda', use_auth_token=None):
+    #     model = cls().to(device)
+        
+    #     ckpt_path = ckpt_name
+    #     model.load_state_dict(torch.load(ckpt_path, map_location=device))
+    #     print(f"Model loaded successfully from {ckpt_path} to {device}")
+
+    #     return model
+
+#     def forward(self, channel_ids, images):
+#         channel_tokens = self.channel_embedding(channel_ids)  # (B, seq_len, D_model)
+#         image_tokens = self.image_embedding(images)  # (B, n_patches, D_model)
+
+#         for i in range(N_LAYERS):   
+#             channel_tokens = self.channel_encoder_layers[i](channel_tokens)
+        
+#         for i in range(N_LAYERS):
+#             channel_tokens = self.fusion_encoder_layers[i](channel_tokens, image_tokens)
+        
+#         return channel_tokens
