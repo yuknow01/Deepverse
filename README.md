@@ -316,6 +316,8 @@ def preprocess_img(path, img_size=IMG_SIZE, device="cuda"):
 
     return x.to(device, non_blocking=True)  # (1,3,224,224)
 ```
+출처
+https://docs.pytorch.org/vision/0.8/models.html
 
 ---
 
