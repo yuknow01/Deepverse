@@ -20,7 +20,7 @@ PATCH_SIZE = 16
 IMG_CHANS = 3
 
 class LayerNormalization(nn.Module):
-    def __init__(self, d_model: int, eps: float = 1e-6) -> None:
+    def __init__(self, d_model: int, eps: float = 1e-16) -> None:
         super().__init__()
         self.eps = eps
         self.alpha = nn.Parameter(torch.ones(d_model))
@@ -36,7 +36,7 @@ class ScaledDotProductAttention(nn.Module):
         super().__init__()
 
     def forward(self, Q, K, V):
-        scores = torch.matmul(Q, K.transpose(-1, -2)) / np.sqrt(D_K)
+        scores = torch.matmul(Q, K.transpose(-1, -2)) / (D_K ** 0.5)
         attn = F.softmax(scores, dim=-1)
         context = torch.matmul(attn, V)
         return context, attn
@@ -87,7 +87,7 @@ class Channel_Embedding(nn.Module):
         seq_len = channel_ids.size(1)
         pos = torch.arange(seq_len, dtype=torch.long, device=channel_ids.device)
         pos = pos.unsqueeze(0).expand_as(channel_ids[:, :, 0])
-        tok_emb = self.proj(channel_ids.float())  
+        tok_emb = self.proj(channel_ids)  
         embedding = tok_emb + self.pos_embed(pos)
         return self.norm(embedding)
     
