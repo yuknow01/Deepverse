@@ -120,8 +120,8 @@ Example toggles used in this setup:
 
 ## Channel information
 **Tensor shape:** `(Rx, Tx, Subcarrier)`
-- `Rx`: BS antenna index (e.g., 16)
-- `Tx`: UE antenna index (e.g., 1)
+- `Rx`: BS antenna index (e.g., 1)
+- `Tx`: UE antenna index (e.g., 16)
 - `Subcarrier`: OFDM subcarrier index (e.g., 512)
 - Optional subset: `selected_subcarriers = [0..7]`
 
