@@ -4,11 +4,11 @@ import torch.nn.functional as F
 import numpy as np
 
 
-ELEMENT_LENGTH = 64 # 16 -> 64
-D_MODEL = 128  # 64 -> 128
+ELEMENT_LENGTH = 16 
+D_MODEL = 64  
 MAX_LEN = 129
 N_LAYERS = 12
-N_HEADS = 8  # 12 -> 8
+N_HEADS = 12  
 D_FF = D_MODEL * 4
 D_K = D_MODEL // N_HEADS
 D_V = D_MODEL // N_HEADS
@@ -73,7 +73,7 @@ class ProwiseFeedForwardNet(nn.Module):
     def forward(self, x):
         output = self.fc2(self.dropout(F.relu(self.fc1(x))))
         return self.norm(x + self.dropout(output))
-    d
+    
 class Channel_Embedding(nn.Module):
     def __init__(self, element_length, d_model, max_len):
         super().__init__()
