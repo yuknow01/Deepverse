@@ -75,6 +75,13 @@ class ProwiseFeedForwardNet(nn.Module):
         return self.norm(x + self.dropout(output))
     
 class Channel_Embedding(nn.Module):
+    """
+    channel_ids : (B, seq_len, element_length) -> (B, seq_len, D_model)
+    L = seq_len, D_model = d_model, E = element_length
+    channel shape가 (1,16,64) -> (1,16,128)가  됨
+    만약 (16,16,64) shape일 경우 maxlen 16*16*128 / 64 = 512로 MAXLEN 초과 
+    즉 추후에 고쳐야함
+    """
     def __init__(self, element_length, d_model, max_len):
         super().__init__()
         self.element_length = element_length

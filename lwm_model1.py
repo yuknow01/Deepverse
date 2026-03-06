@@ -91,7 +91,7 @@ class EncoderLayer(nn.Module):
         self.enc_self_attn = MultiHeadAttention()
         self.pos_ffn = PoswiseFeedForwardNet()
         self.norm = LayerNormalization(D_MODEL)
-
+    
     def forward(self, enc_inputs):
         attn_outputs, attn = self.enc_self_attn(enc_inputs, enc_inputs, enc_inputs)
         attn_outputs = self.norm(attn_outputs)
