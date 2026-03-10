@@ -1,0 +1,227 @@
+=== lwm_freeze | Case1 SC-wise | scenes=1000 | train=47,232 | val=14,720 ===
+[001/200] train loss=0.274779 nmse=0.0698dB | val loss=0.060759 nmse=-6.4823dB | 4.2s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@1: val nmse=-6.4823dB
+[002/200] train loss=0.044164 nmse=-7.8746dB | val loss=0.019419 nmse=-11.4811dB | 4.2s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@2: val nmse=-11.4811dB
+[003/200] train loss=0.029993 nmse=-9.5577dB | val loss=0.018121 nmse=-11.7879dB | 4.0s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@3: val nmse=-11.7879dB
+[004/200] train loss=0.028068 nmse=-9.8464dB | val loss=0.018026 nmse=-11.8111dB | 4.4s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@4: val nmse=-11.8111dB
+[005/200] train loss=0.026682 nmse=-10.0659dB | val loss=0.017904 nmse=-11.8405dB | 4.3s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@5: val nmse=-11.8405dB
+[006/200] train loss=0.025530 nmse=-10.2586dB | val loss=0.017840 nmse=-11.8565dB | 3.8s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@6: val nmse=-11.8565dB
+[007/200] train loss=0.024463 nmse=-10.4428dB | val loss=0.017815 nmse=-11.8626dB | 4.1s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@7: val nmse=-11.8626dB
+[008/200] train loss=0.023637 nmse=-10.5926dB | val loss=0.017732 nmse=-11.8828dB | 4.3s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@8: val nmse=-11.8828dB
+[009/200] train loss=0.022891 nmse=-10.7316dB | val loss=0.017716 nmse=-11.8866dB | 4.0s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@9: val nmse=-11.8866dB
+[010/200] train loss=0.022274 nmse=-10.8513dB | val loss=0.017639 nmse=-11.9056dB | 4.3s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@10: val nmse=-11.9056dB
+[011/200] train loss=0.021715 nmse=-10.9621dB | val loss=0.017660 nmse=-11.9001dB | 4.2s
+[012/200] train loss=0.021251 nmse=-11.0549dB | val loss=0.017593 nmse=-11.9170dB | 4.5s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@12: val nmse=-11.9170dB
+[013/200] train loss=0.020820 nmse=-11.1449dB | val loss=0.017561 nmse=-11.9250dB | 3.7s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@13: val nmse=-11.9250dB
+[014/200] train loss=0.020412 nmse=-11.2292dB | val loss=0.017604 nmse=-11.9143dB | 4.3s
+[015/200] train loss=0.020019 nmse=-11.3134dB | val loss=0.017538 nmse=-11.9305dB | 4.1s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@15: val nmse=-11.9305dB
+[016/200] train loss=0.019720 nmse=-11.3786dB | val loss=0.017544 nmse=-11.9286dB | 4.1s
+[017/200] train loss=0.019413 nmse=-11.4475dB | val loss=0.017494 nmse=-11.9415dB | 3.7s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@17: val nmse=-11.9415dB
+[018/200] train loss=0.019189 nmse=-11.4985dB | val loss=0.017495 nmse=-11.9411dB | 3.9s
+[019/200] train loss=0.018918 nmse=-11.5596dB | val loss=0.017448 nmse=-11.9535dB | 4.4s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@19: val nmse=-11.9535dB
+[020/200] train loss=0.018697 nmse=-11.6096dB | val loss=0.017457 nmse=-11.9507dB | 4.1s
+[021/200] train loss=0.018504 nmse=-11.6549dB | val loss=0.017404 nmse=-11.9641dB | 3.8s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@21: val nmse=-11.9641dB
+[022/200] train loss=0.018352 nmse=-11.6920dB | val loss=0.017426 nmse=-11.9583dB | 4.6s
+[023/200] train loss=0.018193 nmse=-11.7289dB | val loss=0.017435 nmse=-11.9561dB | 3.6s
+[024/200] train loss=0.018048 nmse=-11.7630dB | val loss=0.017430 nmse=-11.9578dB | 4.0s
+[025/200] train loss=0.017942 nmse=-11.7911dB | val loss=0.017390 nmse=-11.9677dB | 4.6s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@25: val nmse=-11.9677dB
+[026/200] train loss=0.017812 nmse=-11.8202dB | val loss=0.017368 nmse=-11.9738dB | 3.8s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@26: val nmse=-11.9738dB
+[027/200] train loss=0.017708 nmse=-11.8458dB | val loss=0.017400 nmse=-11.9654dB | 3.7s
+[028/200] train loss=0.017605 nmse=-11.8709dB | val loss=0.017437 nmse=-11.9564dB | 4.0s
+[029/200] train loss=0.017532 nmse=-11.8908dB | val loss=0.017425 nmse=-11.9588dB | 3.4s
+[030/200] train loss=0.017461 nmse=-11.9079dB | val loss=0.017414 nmse=-11.9616dB | 3.6s
+[031/200] train loss=0.017384 nmse=-11.9279dB | val loss=0.017405 nmse=-11.9641dB | 3.9s
+[032/200] train loss=0.017321 nmse=-11.9435dB | val loss=0.017376 nmse=-11.9716dB | 3.9s
+[033/200] train loss=0.017247 nmse=-11.9619dB | val loss=0.017346 nmse=-11.9792dB | 3.9s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@33: val nmse=-11.9792dB
+[034/200] train loss=0.017198 nmse=-11.9741dB | val loss=0.017360 nmse=-11.9751dB | 3.8s
+[035/200] train loss=0.017160 nmse=-11.9851dB | val loss=0.017307 nmse=-11.9887dB | 4.1s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@35: val nmse=-11.9887dB
+[036/200] train loss=0.017096 nmse=-11.9996dB | val loss=0.017334 nmse=-11.9809dB | 4.1s
+[037/200] train loss=0.017049 nmse=-12.0118dB | val loss=0.017395 nmse=-11.9661dB | 3.9s
+[038/200] train loss=0.016999 nmse=-12.0248dB | val loss=0.017349 nmse=-11.9777dB | 4.3s
+[039/200] train loss=0.016966 nmse=-12.0318dB | val loss=0.017341 nmse=-11.9802dB | 3.8s
+[040/200] train loss=0.016938 nmse=-12.0397dB | val loss=0.017361 nmse=-11.9747dB | 4.0s
+[041/200] train loss=0.016906 nmse=-12.0480dB | val loss=0.017353 nmse=-11.9778dB | 4.3s
+[042/200] train loss=0.016878 nmse=-12.0557dB | val loss=0.017329 nmse=-11.9824dB | 4.2s
+[043/200] train loss=0.016847 nmse=-12.0634dB | val loss=0.017319 nmse=-11.9851dB | 4.0s
+[044/200] train loss=0.016824 nmse=-12.0708dB | val loss=0.017294 nmse=-11.9913dB | 3.8s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@44: val nmse=-11.9913dB
+[045/200] train loss=0.016813 nmse=-12.0740dB | val loss=0.017309 nmse=-11.9878dB | 4.1s
+[046/200] train loss=0.016777 nmse=-12.0808dB | val loss=0.017313 nmse=-11.9874dB | 4.1s
+[047/200] train loss=0.016761 nmse=-12.0857dB | val loss=0.017329 nmse=-11.9829dB | 4.4s
+[048/200] train loss=0.016738 nmse=-12.0914dB | val loss=0.017301 nmse=-11.9906dB | 3.7s
+[049/200] train loss=0.016734 nmse=-12.0937dB | val loss=0.017341 nmse=-11.9803dB | 4.1s
+[050/200] train loss=0.016712 nmse=-12.0994dB | val loss=0.017351 nmse=-11.9774dB | 4.3s
+[051/200] train loss=0.016691 nmse=-12.1023dB | val loss=0.017384 nmse=-11.9695dB | 4.4s
+[052/200] train loss=0.016686 nmse=-12.1048dB | val loss=0.017334 nmse=-11.9814dB | 4.4s
+[053/200] train loss=0.016669 nmse=-12.1108dB | val loss=0.017291 nmse=-11.9927dB | 4.6s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@53: val nmse=-11.9927dB
+[054/200] train loss=0.016656 nmse=-12.1130dB | val loss=0.017297 nmse=-11.9909dB | 3.7s
+[055/200] train loss=0.016643 nmse=-12.1160dB | val loss=0.017347 nmse=-11.9790dB | 3.8s
+[056/200] train loss=0.016624 nmse=-12.1209dB | val loss=0.017337 nmse=-11.9811dB | 4.1s
+[057/200] train loss=0.016620 nmse=-12.1208dB | val loss=0.017357 nmse=-11.9749dB | 3.8s
+[058/200] train loss=0.016615 nmse=-12.1226dB | val loss=0.017296 nmse=-11.9918dB | 4.1s
+[059/200] train loss=0.016608 nmse=-12.1251dB | val loss=0.017342 nmse=-11.9793dB | 4.1s
+[060/200] train loss=0.016596 nmse=-12.1284dB | val loss=0.017309 nmse=-11.9876dB | 4.0s
+[061/200] train loss=0.016601 nmse=-12.1275dB | val loss=0.017321 nmse=-11.9853dB | 3.8s
+[062/200] train loss=0.016574 nmse=-12.1330dB | val loss=0.017282 nmse=-11.9946dB | 3.8s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@62: val nmse=-11.9946dB
+[063/200] train loss=0.016581 nmse=-12.1334dB | val loss=0.017281 nmse=-11.9948dB | 3.8s
+  -> saved case1_lwm_freeze_scene1000_best.pt | best@63: val nmse=-11.9948dB
+[064/200] train loss=0.016570 nmse=-12.1354dB | val loss=0.017333 nmse=-11.9818dB | 3.9s
+[065/200] train loss=0.016549 nmse=-12.1389dB | val loss=0.017282 nmse=-11.9947dB | 4.0s
+[066/200] train loss=0.016550 nmse=-12.1393dB | val loss=0.017352 nmse=-11.9770dB | 3.7s
+[067/200] train loss=0.016540 nmse=-12.1426dB | val loss=0.017364 nmse=-11.9741dB | 3.7s
+[068/200] train loss=0.016547 nmse=-12.1423dB | val loss=0.017346 nmse=-11.9785dB | 4.0s
+[069/200] train loss=0.016538 nmse=-12.1441dB | val loss=0.017284 nmse=-11.9945dB | 4.1s
+[070/200] train loss=0.016533 nmse=-12.1450dB | val loss=0.017324 nmse=-11.9845dB | 3.9s
+[071/200] train loss=0.016533 nmse=-12.1457dB | val loss=0.017314 nmse=-11.9868dB | 4.4s
+[072/200] train loss=0.016531 nmse=-12.1456dB | val loss=0.017324 nmse=-11.9840dB | 4.5s
+[073/200] train loss=0.016515 nmse=-12.1497dB | val loss=0.017316 nmse=-11.9856dB | 3.8s
+[074/200] train loss=0.016518 nmse=-12.1488dB | val loss=0.017309 nmse=-11.9884dB | 4.0s
+[075/200] train loss=0.016507 nmse=-12.1509dB | val loss=0.017306 nmse=-11.9884dB | 4.1s
+[076/200] train loss=0.016503 nmse=-12.1525dB | val loss=0.017292 nmse=-11.9923dB | 4.2s
+[077/200] train loss=0.016502 nmse=-12.1535dB | val loss=0.017300 nmse=-11.9901dB | 4.1s
+[078/200] train loss=0.016502 nmse=-12.1535dB | val loss=0.017295 nmse=-11.9911dB | 3.8s
+[079/200] train loss=0.016496 nmse=-12.1538dB | val loss=0.017318 nmse=-11.9858dB | 3.7s
+[080/200] train loss=0.016498 nmse=-12.1541dB | val loss=0.017320 nmse=-11.9855dB | 3.9s
+[081/200] train loss=0.016498 nmse=-12.1553dB | val loss=0.017304 nmse=-11.9890dB | 4.1s
+[082/200] train loss=0.016481 nmse=-12.1582dB | val loss=0.017334 nmse=-11.9810dB | 4.0s
+[083/200] train loss=0.016486 nmse=-12.1561dB | val loss=0.017311 nmse=-11.9869dB | 3.9s
+[084/200] train loss=0.016485 nmse=-12.1584dB | val loss=0.017315 nmse=-11.9866dB | 3.8s
+[085/200] train loss=0.016475 nmse=-12.1592dB | val loss=0.017308 nmse=-11.9879dB | 3.8s
+[086/200] train loss=0.016486 nmse=-12.1579dB | val loss=0.017322 nmse=-11.9849dB | 4.2s
+[087/200] train loss=0.016480 nmse=-12.1603dB | val loss=0.017311 nmse=-11.9870dB | 3.8s
+[088/200] train loss=0.016465 nmse=-12.1625dB | val loss=0.017320 nmse=-11.9847dB | 4.1s
+[089/200] train loss=0.016476 nmse=-12.1613dB | val loss=0.017314 nmse=-11.9867dB | 3.8s
+[090/200] train loss=0.016458 nmse=-12.1643dB | val loss=0.017356 nmse=-11.9757dB | 3.7s
+[091/200] train loss=0.016468 nmse=-12.1625dB | val loss=0.017338 nmse=-11.9808dB | 4.1s
+[092/200] train loss=0.016462 nmse=-12.1632dB | val loss=0.017296 nmse=-11.9912dB | 4.2s
+[093/200] train loss=0.016466 nmse=-12.1629dB | val loss=0.017322 nmse=-11.9842dB | 3.9s
+[094/200] train loss=0.016461 nmse=-12.1645dB | val loss=0.017321 nmse=-11.9842dB | 4.0s
+[095/200] train loss=0.016458 nmse=-12.1654dB | val loss=0.017312 nmse=-11.9875dB | 4.1s
+[096/200] train loss=0.016454 nmse=-12.1651dB | val loss=0.017341 nmse=-11.9796dB | 3.8s
+[097/200] train loss=0.016452 nmse=-12.1649dB | val loss=0.017322 nmse=-11.9850dB | 4.6s
+[098/200] train loss=0.016457 nmse=-12.1654dB | val loss=0.017299 nmse=-11.9905dB | 3.6s
+[099/200] train loss=0.016462 nmse=-12.1654dB | val loss=0.017295 nmse=-11.9911dB | 3.8s
+[100/200] train loss=0.016449 nmse=-12.1667dB | val loss=0.017335 nmse=-11.9811dB | 3.8s
+[101/200] train loss=0.016444 nmse=-12.1679dB | val loss=0.017310 nmse=-11.9880dB | 3.7s
+[102/200] train loss=0.016447 nmse=-12.1673dB | val loss=0.017326 nmse=-11.9832dB | 4.0s
+[103/200] train loss=0.016441 nmse=-12.1677dB | val loss=0.017331 nmse=-11.9823dB | 3.8s
+[104/200] train loss=0.016437 nmse=-12.1690dB | val loss=0.017321 nmse=-11.9846dB | 3.9s
+[105/200] train loss=0.016446 nmse=-12.1693dB | val loss=0.017299 nmse=-11.9901dB | 4.0s
+[106/200] train loss=0.016442 nmse=-12.1689dB | val loss=0.017335 nmse=-11.9806dB | 3.9s
+[107/200] train loss=0.016433 nmse=-12.1706dB | val loss=0.017310 nmse=-11.9877dB | 4.4s
+[108/200] train loss=0.016441 nmse=-12.1691dB | val loss=0.017325 nmse=-11.9841dB | 4.1s
+[109/200] train loss=0.016425 nmse=-12.1714dB | val loss=0.017318 nmse=-11.9856dB | 4.4s
+[110/200] train loss=0.016439 nmse=-12.1707dB | val loss=0.017305 nmse=-11.9887dB | 4.0s
+[111/200] train loss=0.016438 nmse=-12.1701dB | val loss=0.017339 nmse=-11.9801dB | 4.0s
+[112/200] train loss=0.016433 nmse=-12.1713dB | val loss=0.017328 nmse=-11.9831dB | 3.8s
+[113/200] train loss=0.016434 nmse=-12.1718dB | val loss=0.017331 nmse=-11.9818dB | 3.7s
+[114/200] train loss=0.016434 nmse=-12.1714dB | val loss=0.017323 nmse=-11.9834dB | 3.8s
+[115/200] train loss=0.016434 nmse=-12.1711dB | val loss=0.017315 nmse=-11.9861dB | 3.6s
+[116/200] train loss=0.016431 nmse=-12.1722dB | val loss=0.017305 nmse=-11.9886dB | 3.5s
+[117/200] train loss=0.016434 nmse=-12.1723dB | val loss=0.017334 nmse=-11.9810dB | 3.7s
+[118/200] train loss=0.016431 nmse=-12.1729dB | val loss=0.017321 nmse=-11.9846dB | 4.0s
+[119/200] train loss=0.016431 nmse=-12.1718dB | val loss=0.017339 nmse=-11.9803dB | 4.1s
+[120/200] train loss=0.016417 nmse=-12.1747dB | val loss=0.017337 nmse=-11.9805dB | 3.9s
+[121/200] train loss=0.016428 nmse=-12.1724dB | val loss=0.017302 nmse=-11.9897dB | 3.9s
+[122/200] train loss=0.016425 nmse=-12.1740dB | val loss=0.017336 nmse=-11.9805dB | 3.9s
+[123/200] train loss=0.016424 nmse=-12.1729dB | val loss=0.017325 nmse=-11.9836dB | 4.3s
+[124/200] train loss=0.016424 nmse=-12.1741dB | val loss=0.017312 nmse=-11.9867dB | 4.2s
+[125/200] train loss=0.016415 nmse=-12.1747dB | val loss=0.017339 nmse=-11.9800dB | 4.1s
+[126/200] train loss=0.016420 nmse=-12.1742dB | val loss=0.017339 nmse=-11.9805dB | 4.4s
+[127/200] train loss=0.016421 nmse=-12.1752dB | val loss=0.017317 nmse=-11.9854dB | 3.8s
+[128/200] train loss=0.016425 nmse=-12.1742dB | val loss=0.017332 nmse=-11.9821dB | 4.5s
+[129/200] train loss=0.016417 nmse=-12.1743dB | val loss=0.017327 nmse=-11.9833dB | 4.3s
+[130/200] train loss=0.016418 nmse=-12.1760dB | val loss=0.017317 nmse=-11.9857dB | 4.0s
+[131/200] train loss=0.016424 nmse=-12.1752dB | val loss=0.017337 nmse=-11.9805dB | 3.8s
+[132/200] train loss=0.016419 nmse=-12.1766dB | val loss=0.017353 nmse=-11.9765dB | 3.8s
+[133/200] train loss=0.016413 nmse=-12.1762dB | val loss=0.017335 nmse=-11.9810dB | 4.4s
+[134/200] train loss=0.016413 nmse=-12.1766dB | val loss=0.017328 nmse=-11.9829dB | 4.3s
+[135/200] train loss=0.016418 nmse=-12.1748dB | val loss=0.017319 nmse=-11.9851dB | 3.7s
+[136/200] train loss=0.016418 nmse=-12.1766dB | val loss=0.017317 nmse=-11.9855dB | 4.3s
+[137/200] train loss=0.016422 nmse=-12.1749dB | val loss=0.017328 nmse=-11.9826dB | 4.2s
+[138/200] train loss=0.016416 nmse=-12.1771dB | val loss=0.017322 nmse=-11.9845dB | 4.1s
+[139/200] train loss=0.016413 nmse=-12.1765dB | val loss=0.017328 nmse=-11.9832dB | 4.1s
+[140/200] train loss=0.016407 nmse=-12.1779dB | val loss=0.017335 nmse=-11.9809dB | 4.0s
+[141/200] train loss=0.016418 nmse=-12.1771dB | val loss=0.017322 nmse=-11.9845dB | 3.8s
+[142/200] train loss=0.016406 nmse=-12.1772dB | val loss=0.017343 nmse=-11.9789dB | 4.1s
+[143/200] train loss=0.016413 nmse=-12.1779dB | val loss=0.017328 nmse=-11.9830dB | 3.9s
+[144/200] train loss=0.016404 nmse=-12.1790dB | val loss=0.017326 nmse=-11.9831dB | 4.2s
+[145/200] train loss=0.016400 nmse=-12.1796dB | val loss=0.017312 nmse=-11.9871dB | 4.4s
+[146/200] train loss=0.016408 nmse=-12.1796dB | val loss=0.017344 nmse=-11.9790dB | 4.3s
+[147/200] train loss=0.016416 nmse=-12.1773dB | val loss=0.017333 nmse=-11.9814dB | 4.1s
+[148/200] train loss=0.016401 nmse=-12.1780dB | val loss=0.017341 nmse=-11.9796dB | 4.3s
+[149/200] train loss=0.016413 nmse=-12.1779dB | val loss=0.017321 nmse=-11.9847dB | 4.1s
+[150/200] train loss=0.016409 nmse=-12.1784dB | val loss=0.017329 nmse=-11.9825dB | 3.8s
+[151/200] train loss=0.016408 nmse=-12.1780dB | val loss=0.017338 nmse=-11.9800dB | 4.2s
+[152/200] train loss=0.016406 nmse=-12.1784dB | val loss=0.017335 nmse=-11.9810dB | 4.0s
+[153/200] train loss=0.016403 nmse=-12.1779dB | val loss=0.017329 nmse=-11.9827dB | 4.0s
+[154/200] train loss=0.016399 nmse=-12.1788dB | val loss=0.017339 nmse=-11.9800dB | 4.1s
+[155/200] train loss=0.016401 nmse=-12.1788dB | val loss=0.017328 nmse=-11.9831dB | 4.0s
+[156/200] train loss=0.016413 nmse=-12.1794dB | val loss=0.017337 nmse=-11.9806dB | 4.2s
+[157/200] train loss=0.016408 nmse=-12.1787dB | val loss=0.017342 nmse=-11.9794dB | 4.3s
+[158/200] train loss=0.016406 nmse=-12.1787dB | val loss=0.017344 nmse=-11.9790dB | 3.8s
+[159/200] train loss=0.016407 nmse=-12.1786dB | val loss=0.017324 nmse=-11.9841dB | 4.0s
+[160/200] train loss=0.016408 nmse=-12.1777dB | val loss=0.017331 nmse=-11.9821dB | 4.2s
+[161/200] train loss=0.016413 nmse=-12.1783dB | val loss=0.017332 nmse=-11.9817dB | 4.2s
+[162/200] train loss=0.016406 nmse=-12.1793dB | val loss=0.017327 nmse=-11.9834dB | 4.4s
+[163/200] train loss=0.016405 nmse=-12.1787dB | val loss=0.017334 nmse=-11.9814dB | 4.5s
+[164/200] train loss=0.016408 nmse=-12.1774dB | val loss=0.017330 nmse=-11.9821dB | 3.8s
+[165/200] train loss=0.016402 nmse=-12.1804dB | val loss=0.017334 nmse=-11.9812dB | 4.0s
+[166/200] train loss=0.016403 nmse=-12.1804dB | val loss=0.017328 nmse=-11.9827dB | 3.7s
+[167/200] train loss=0.016399 nmse=-12.1798dB | val loss=0.017329 nmse=-11.9826dB | 3.5s
+[168/200] train loss=0.016411 nmse=-12.1786dB | val loss=0.017341 nmse=-11.9795dB | 3.5s
+[169/200] train loss=0.016400 nmse=-12.1793dB | val loss=0.017332 nmse=-11.9819dB | 4.5s
+[170/200] train loss=0.016402 nmse=-12.1799dB | val loss=0.017334 nmse=-11.9815dB | 4.1s
+[171/200] train loss=0.016394 nmse=-12.1795dB | val loss=0.017329 nmse=-11.9825dB | 4.2s
+[172/200] train loss=0.016410 nmse=-12.1789dB | val loss=0.017332 nmse=-11.9819dB | 4.2s
+[173/200] train loss=0.016389 nmse=-12.1811dB | val loss=0.017332 nmse=-11.9819dB | 3.7s
+[174/200] train loss=0.016396 nmse=-12.1806dB | val loss=0.017333 nmse=-11.9816dB | 3.3s
+[175/200] train loss=0.016395 nmse=-12.1807dB | val loss=0.017331 nmse=-11.9821dB | 4.1s
+[176/200] train loss=0.016396 nmse=-12.1803dB | val loss=0.017330 nmse=-11.9823dB | 3.8s
+[177/200] train loss=0.016394 nmse=-12.1796dB | val loss=0.017330 nmse=-11.9823dB | 4.1s
+[178/200] train loss=0.016406 nmse=-12.1789dB | val loss=0.017337 nmse=-11.9807dB | 3.8s
+[179/200] train loss=0.016406 nmse=-12.1800dB | val loss=0.017332 nmse=-11.9819dB | 3.8s
+[180/200] train loss=0.016395 nmse=-12.1807dB | val loss=0.017332 nmse=-11.9818dB | 4.1s
+[181/200] train loss=0.016409 nmse=-12.1795dB | val loss=0.017333 nmse=-11.9815dB | 4.2s
+[182/200] train loss=0.016396 nmse=-12.1812dB | val loss=0.017332 nmse=-11.9819dB | 4.1s
+[183/200] train loss=0.016402 nmse=-12.1813dB | val loss=0.017333 nmse=-11.9816dB | 4.0s
+[184/200] train loss=0.016396 nmse=-12.1812dB | val loss=0.017335 nmse=-11.9810dB | 4.0s
+[185/200] train loss=0.016394 nmse=-12.1809dB | val loss=0.017333 nmse=-11.9815dB | 4.3s
+[186/200] train loss=0.016395 nmse=-12.1805dB | val loss=0.017332 nmse=-11.9818dB | 4.2s
+[187/200] train loss=0.016394 nmse=-12.1801dB | val loss=0.017332 nmse=-11.9819dB | 4.0s
+[188/200] train loss=0.016392 nmse=-12.1802dB | val loss=0.017331 nmse=-11.9820dB | 4.1s
+[189/200] train loss=0.016405 nmse=-12.1802dB | val loss=0.017332 nmse=-11.9818dB | 4.5s
+[190/200] train loss=0.016402 nmse=-12.1810dB | val loss=0.017332 nmse=-11.9818dB | 4.2s
+[191/200] train loss=0.016400 nmse=-12.1807dB | val loss=0.017332 nmse=-11.9818dB | 4.0s
+[192/200] train loss=0.016396 nmse=-12.1806dB | val loss=0.017332 nmse=-11.9817dB | 4.1s
+[193/200] train loss=0.016398 nmse=-12.1800dB | val loss=0.017332 nmse=-11.9817dB | 3.8s
+[194/200] train loss=0.016402 nmse=-12.1796dB | val loss=0.017332 nmse=-11.9817dB | 4.2s
+[195/200] train loss=0.016396 nmse=-12.1809dB | val loss=0.017333 nmse=-11.9817dB | 3.7s
+[196/200] train loss=0.016397 nmse=-12.1803dB | val loss=0.017332 nmse=-11.9817dB | 3.9s
+[197/200] train loss=0.016406 nmse=-12.1800dB | val loss=0.017332 nmse=-11.9817dB | 4.6s
+[198/200] train loss=0.016393 nmse=-12.1816dB | val loss=0.017332 nmse=-11.9817dB | 4.0s
+[199/200] train loss=0.016399 nmse=-12.1800dB | val loss=0.017332 nmse=-11.9817dB | 4.3s
+[200/200] train loss=0.016397 nmse=-12.1805dB | val loss=0.017332 nmse=-11.9817dB | 3.9s
+
+=== Done === 0h 13m 25s | Best epoch 63: val loss=0.017281 nmse=-11.9948dB
