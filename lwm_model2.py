@@ -6,6 +6,7 @@ import numpy as np
 ELEMENT_LENGTH = 16
 D_MODEL = 64
 MAX_LEN = 129
+# N_LAYERS = 12 -> 4, H_HEADS = 12 -> 4 for testing
 N_LAYERS = 12
 N_HEADS = 12
 D_FF = D_MODEL * 4
